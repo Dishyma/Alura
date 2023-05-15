@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Consumo</title>
+</head>
+<body>
+    <h3>Alcohol o gasolina?</h3>
+    
+    <script>
+
+        function saltarLinea() {
+            document.write("<br><hr>")
+        }
+
+        function imprimir(dato){
+            saltarLinea()
+            document.write("<big>" + dato + "</big>")
+        }
+
+        function aniosDiferecnia(edad1, edad2) {
+            var diferencia = edad1 - edad2
+            imprimir("La diferencia de edad es: " + diferencia)
+        }
+
+        var edad1 = parseInt(prompt("Dame la edad el hermano" + 1 + ": "))
+        var edad2 = parseInt(prompt("Dame la edad el hermano" + 2 + ": "))
+        
+        aniosDiferecnia(edad1, edad2)
+            
+        
+
+        /*
+        var tanque = 40
+        var distancia = 480
+        var eficienciaGasolina = distancia / tanque
+        document.write("El carro recorre " + eficienciaGasolina + " kilometros por litro")
+        
+        saltarLinea()
+
+        distancia = 300
+
+        eficienciaAlcohol = distancia / tanque
+        document.write("El carro recorre " + eficienciaAlcohol + " kilometros por litro")
+
+        imprimir("La comida es lo mejor") 
+        imprimir("El carro recorre " + eficienciaAlcohol + " kilometros por litro")
+        */
+    </script>
+</body>
+</html>
